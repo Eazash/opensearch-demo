@@ -57,6 +57,9 @@ export const genOpensearchDescription = async (
 			distPath = resolve(config.publicDir, options.fileName);
 			const output = generateFileOutput(options);
 			await writeFile(distPath, output, { flag: 'w' });
+			config.logger.info(
+				`Generating ${options.fileName} with Base URL ${options.baseUrl}`
+			);
 		}
 	};
 };
