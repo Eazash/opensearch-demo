@@ -7,7 +7,7 @@
 		type="application/opensearchdescription+xml"
 		rel="search"
 		href="/opensearch.xml"
-		title="Product "
+		title="Product Catalog"
 	/>
 </svelte:head>
 
