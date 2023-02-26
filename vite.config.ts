@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 		plugins: [
 			sveltekit(),
 			genOpensearchDescription({
-				baseUrl: `https://${env.VITE_VERCEL_URL}`,
+				baseUrl: `https://${env.VERCEL_URL}`,
 				fileName: 'opensearch.xml',
 				shortName: 'Product Catalog',
 				longName: 'Demo Product Catalog with Opensearch spec',
